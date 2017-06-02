@@ -1,8 +1,10 @@
-<h2>List of all Contacts</h2>
-<ol>
-  <% @contacts.each do |contact| %>
-    <li>
-      <a href="/contacts/<%= contact.id %>"><%= contact.first_name %> <%= contact.last_name %></a>
-    </li>
-  <% end %>
-</ol>
+<h2>There are <u><%= @contacts.count %></u> Contacts</h2>
+<hr>
+
+<% @contacts.each do |contact| %>
+  <p>
+    <!-- <a href="/contacts/<%= contact.id %>"></a> -->
+    <%= contact.id %> <%= contact.first_name %> <%= contact.last_name %>  (<%= contact.email %>)
+  <h5>Edit | Delete</h5>
+<% end %>
+</p>
