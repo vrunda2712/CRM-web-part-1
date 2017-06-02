@@ -14,6 +14,15 @@ get ('/contacts') do
   erb :contacts
 end
 
+get '/contacts/:id' do
+  # params[:id]
+  # 1. Retrive the recipes
+  @contact = Contact.find(params[:id])
+
+  # 2. Render recipe page
+  erb :contact
+end
+
 get ('/about') do
   erb :about
 end
