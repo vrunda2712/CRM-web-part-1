@@ -16,11 +16,15 @@ end
 
 get '/contacts/:id' do
   # params[:id]
-  # 1. Retrive the recipes
-  @contact = Contact.find(params[:id])
+  # 1. Retrive the contacts
+  @contact = Contact.find(params[:id].to_i)
 
-  # 2. Render recipe page
-  erb :contact
+  # 2. Render contact page
+  if @contact
+    erb :contact
+  else
+    raise Sinatra::NotFound
+  end
 end
 
 get ('/about') do

@@ -35,7 +35,7 @@ main{
   border: 1px solid white;
 }*/
 
-a{
+nav a{
   display: block;
   color: white;
   background-color: #bfbdbd;
@@ -63,7 +63,7 @@ p {
   margin-bottom: 0px;
   max-width: 1200px;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 22px;
   padding-left: 15px;
 }
 
@@ -81,7 +81,7 @@ h5 {
   margin-bottom: 10px;
   max-width: 1200px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 13px;
   padding: 10px;
-  padding-left: 15px;
+  padding-left: 20px;
 }

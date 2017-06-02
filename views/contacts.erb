@@ -3,8 +3,8 @@
 
 <% @contacts.each do |contact| %>
   <p>
-    <!-- <a href="/contacts/<%= contact.id %>"></a> -->
-    <%= contact.id %> <%= contact.first_name %> <%= contact.last_name %>  (<%= contact.email %>)
-  <h5>Edit | Delete</h5>
+    <a href="/contacts/<%= contact.id %>">
+    <%= contact.id %></a> : <%= contact.first_name %> <%= contact.last_name %> (<%= contact.email %>)
+  <h5><a href="#">Edit</a> | <a href="#">Delete</a></h5>
 <% end %>
 </p>
