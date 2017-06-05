@@ -72,16 +72,25 @@ h2 {
   background-color: #e6927b;
   padding: 10px;
   padding-left: 15px;
+  border: 2px solid #a43516;
 }
 
 h5 {
   color: black;
   background-color: #7ed0d2;
   margin: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   max-width: 1200px;
   font-weight: bold;
   font-size: 13px;
   padding: 10px;
   padding-left: 20px;
+}
+
+#new{
+  text-align: right;
+  background-color: #e3dedf;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
 }
