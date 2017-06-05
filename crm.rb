@@ -1,7 +1,7 @@
 require 'sinatra'
 require_relative 'contact'
 
-get ('/') do
+get '/' do
   erb :index
 end
 
@@ -9,17 +9,13 @@ get '/home' do
   redirect to('/')
 end
 
-get ('/contacts') do
+get '/contacts' do
   @contacts = Contact.all
   erb :contacts
 end
 
 get '/contacts/:id' do
-  # params[:id]
-  # 1. Retrive the contacts
   @contact = Contact.find(params[:id].to_i)
-
-  # 2. Render contact page
   if @contact
     erb :contact
   else
@@ -27,7 +23,11 @@ get '/contacts/:id' do
   end
 end
 
-get ('/about') do
+get '/new' do
+  erb :new
+end
+
+get '/about' do
   erb :about
 end
 
